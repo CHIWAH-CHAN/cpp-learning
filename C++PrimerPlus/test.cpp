@@ -1,12 +1,23 @@
 #include <iostream>
-int main()
+#include <ctime>
+#include <cstdlib>
+ 
+using namespace std;
+ 
+int main ()
 {
-    using namespace std;
-    double temp;
-    cin >> temp;
-    if (!cin)
-        cout << "False\n";
-    else
-        cout << "True\n";
-    return 0;
+   int i,j;
+ 
+   // 设置种子
+   srand( 100 );
+ 
+   /* 生成 10 个随机数 */
+   for( i = 0; i < 10; i++ )
+   {
+      // 生成实际的随机数
+      j= rand();
+      cout <<"随机数: " << j << endl;
+   }
+ 
+   return 0;
 }
